@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+.jumbotron {
+    padding: 2rem 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--bs-light);
+    border-radius: .3rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    padding: 5% 5%;
+    font-family: 'Montserrat' !important;
+}
+
+h1 {
+    color: #51A2DA;
+    font-weight: 600;
+    // font-weight: 500;
+}
+
+nav {
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+    --tw-gradient-from: #51a2da;
+    --tw-gradient-to: rgba(81, 162, 218, 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+
+    a {
+        color: white !important;
+        font-weight: 700;
+    }
+}
+
+main {
+
+    // #banner-1 {
+    //     overflow:hidden;
+    //     .overlay {
+    //         position: absolute;
+    //         top: 0;
+    //         z-index: 10;
+    //         width: 100%;
+    //         height: 100%;
+    //         background: rgba(0,0,0,0.6);
+    //         transform: skew(200.25deg);
+    //         left: 300px;
+    //     }
+    // }
+
+    // background: linear-gradient(320deg, rgba(92, 47, 164, 0.5) 0%, rgb(176, 250, 255) 25%, rgb(255, 255, 255) 80%);
+    ul ::marker {
+        color: #6c3;
+    }
+
+    .text-fp-darkblue-500 {
+        --tw-text-opacity: 1;
+        color: #294172;
+        color: rgb(41, 65, 114);
+    }
+
+    .font-bold {
+        font-weight: 700;
+    }
+
+    .bg-custom-1 {
+        background: linear-gradient(320deg, #DBEAFE 0%, #BBF7D0 100%);
+        border-radius: 20px;
+    }
+}
+
+#bg-anim {
+    height: 50px;
+    position: relative;
+
+    .bg {
+        animation: slide 6s ease-in-out infinite alternate;
+        background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+        bottom: 0;
+        left: -50%;
+        opacity: .5;
+        position: fixed;
+        right: -50%;
+        top: 0;
+        z-index: 1;
+        height: 100%;
+        position: absolute;
+    }
+
+    .bg2 {
+        animation-direction: alternate-reverse;
+        animation-duration: 8s;
+    }
+
+    .bg3 {
+        animation-duration: 10s;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(-25%);
+        }
+
+        100% {
+            transform: translateX(25%);
+        }
+    }
+}
+
+#fichatecnica {
+    th {
+        text-align: start;
+        padding: 5px;
+    }
+
+    tr {
+        padding: 5px;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        text-align: center;
+    }
+
+    table {
+        margin: auto;
+        border-collapse: collapse;
+    }
+    p {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .move-start {
+        order: -1
+    }
+
+    .move-end {
+        order: 2
+    }
+}

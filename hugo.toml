@@ -1,0 +1,38 @@
+BaseURL = "https://www.mywebsite.com/"
+languageCode = "en-us"
+title = "Slimbook Fedora"
+theme = "fedora-slimbook"
+relativeURLS = true
+
+
+sectionPagesMenu = 'main'
+
+
+[module]
+[[module.mounts]]
+    source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    target = "assets/js/bootstrap.bundle.min.js"
+[[module.mounts]]
+    source = "assets"
+    target = "assets"
+
+
+
+[menu]
+    [[menu.nav]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+    [[menu.nav]]
+    identifier = "specs"
+    name = "Specs"
+    url = "/specs/"
+    weight = 2
+
+    [[menu.nav]]
+    identifier = "buy"
+    name = "Buy"
+    url = "https://slimbook.com"
+    weight = 3
