@@ -34,5 +34,5 @@ sectionPagesMenu = 'main'
     [[menu.nav]]
     identifier = "buy"
     name = "Buy"
-    url = "https://slimbook.com"
+    url = "https://slimbook.com/en/shop/product/fedora-slimbook-16-12700h-1060"
     weight = 3
