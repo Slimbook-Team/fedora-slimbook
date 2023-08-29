@@ -131,7 +131,15 @@ main {
     .move-end {
         order: 2
     }
+}
+
+@media (min-width: 720px) {
     .footer-logos {
         max-width: 50%;
+    }
+}
+@media (min-width: 992px) {
+    .footer-logos {
+        max-width: 40%;
     }
 }
